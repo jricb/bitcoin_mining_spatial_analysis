@@ -8,8 +8,6 @@ import matplotlib.cm as cm
 Utility functions for lightweight visualizations in splot
 """
 
-__author__ = ("Stefanie Lumnitz <stefanie.lumitz@gmail.com>")
-
 
 def moran_hot_cold_spots(moran_loc, p=0.05):
     sig = 1 * (moran_loc.p_sim < p)
