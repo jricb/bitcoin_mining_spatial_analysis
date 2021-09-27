@@ -28,36 +28,39 @@ if __name__ == '__main__':
     print("Bivariate Moran Ren :", mbi_ren.I, mbi_ren.p_sim, mbi_ren.z_sim, mbi_ren.EI_sim, mbi_ren.VI_sim,
           mbi_ren.seI_sim)
 
-    fig, ax = plot_moran_bv(mbi_all, figsize=(12, 6), scatter_kwds=dict(marker='o', s=10),
+    fig, ax = plot_moran_bv(mbi_all, figsize=(16, 7), scatter_kwds=dict(marker='o', s=10),
                             fitline_kwds=dict(color='b', linewidth=3))
     ax[0].set_xticks([i/10.0 for i in np.arange(0, 7, 1)])
     ax[1].set_xticks(np.arange(-1, 8, 1))
-    ax[1].set_yticks(np.arange(-1, 6, 1))
+    ax[1].set_yticks(np.arange(-1, 8, 1))
     ax[1].set_title('Moran’s I: ' + str(round(mbi_all.I, 2)))
     ax[1].set_xlabel('Hash rate')
     ax[1].set_ylabel('Spatial lag of capacity')
+    ax[1].set_aspect(1)
     plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
     plt.show()
 
-    fig, ax = plot_moran_bv(mbi_fos, figsize=(12, 6), scatter_kwds=dict(marker='o', s=10),
+    fig, ax = plot_moran_bv(mbi_fos, figsize=(16, 7), scatter_kwds=dict(marker='o', s=10),
                             fitline_kwds=dict(color='b', linewidth=3))
     ax[0].set_xticks([i/10.0 for i in np.arange(0, 7, 1)])
     ax[1].set_xticks(np.arange(-1, 8, 1))
-    ax[1].set_yticks(np.arange(-1, 6, 1))
+    ax[1].set_yticks(np.arange(-1, 8, 1))
     ax[1].set_title('Moran’s I: ' + str(round(mbi_fos.I, 2)))
     ax[1].set_xlabel('Hash rate')
     ax[1].set_ylabel('Spatial lag of capacity')
+    ax[1].set_aspect(1)
     plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
     plt.show()
 
-    fig, ax = plot_moran_bv(mbi_ren, figsize=(12, 6), scatter_kwds=dict(marker='o', s=10),
+    fig, ax = plot_moran_bv(mbi_ren, figsize=(16, 7), scatter_kwds=dict(marker='o', s=10),
                             fitline_kwds=dict(color='b', linewidth=3))
     ax[0].set_xticks([i/10.0 for i in np.arange(0, 7, 1)])
     ax[1].set_xticks(np.arange(-1, 8, 1))
-    ax[1].set_yticks(np.arange(-1, 6, 1))
+    ax[1].set_yticks(np.arange(-1, 8, 1))
     ax[1].set_title('Moran’s I: ' + str(round(mbi_ren.I, 2)))
     ax[1].set_xlabel('Hash rate')
     ax[1].set_ylabel('Spatial lag of capacity')
+    ax[1].set_aspect(1)
     plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
     plt.show()
 

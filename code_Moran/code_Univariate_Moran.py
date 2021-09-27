@@ -14,15 +14,16 @@ if __name__ == '__main__':
 
     mi = Moran(sf['HrateZS'],  w, transformation='r', permutations=999, two_tailed=True)
     print("Univariate Moran Hashrate :", mi.I, mi.p_sim, mi.z_sim, mi.EI_sim, mi.VI_sim, mi.seI_sim)
-    fig, ax = plot_moran(mi, figsize=(12, 6), scatter_kwds=dict(marker='o', s=10),
+    fig, ax = plot_moran(mi, figsize=(16, 7), scatter_kwds=dict(marker='o', s=10),
                          fitline_kwds=dict(color='b', linewidth=3))
 
     ax[0].set_xticks([i / 10.0 for i in np.arange(0, 8, 1)])
-    ax[1].set_xticks(np.arange(-1, 8, 1))
+    ax[1].set_yticks(np.arange(-1, 8, 1))
     ax[1].set_xticks(np.arange(-1, 8, 1))
     ax[1].set_title('Moran’s I: ' + str(round(mi.I, 2)))
     ax[1].set_ylabel('Spatial lag of hash rate')
     ax[1].set_xlabel('Hash rate')
+    ax[1].set_aspect(1)
     plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
     plt.show()
 

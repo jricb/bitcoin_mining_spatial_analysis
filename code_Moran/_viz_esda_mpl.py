@@ -140,16 +140,6 @@ def moran_scatterplot(moran, zstandard=True, p=None,
                                         aspect_equal=aspect_equal,
                                         scatter_kwds=scatter_kwds,
                                         fitline_kwds=fitline_kwds)
-    elif isinstance(moran, Moran_Local):
-        fig, ax = _moran_loc_scatterplot(moran_loc=moran, zstandard=zstandard,
-                                         ax=ax, p=p, aspect_equal=aspect_equal,
-                                         scatter_kwds=scatter_kwds,
-                                         fitline_kwds=fitline_kwds)
-    elif isinstance(moran, Moran_Local_BV):
-        fig, ax = _moran_loc_bv_scatterplot(moran_loc_bv=moran, ax=ax,
-                                            p=p, aspect_equal=aspect_equal,
-                                            scatter_kwds=scatter_kwds,
-                                            fitline_kwds=fitline_kwds)
     ax.xaxis.set_ticks_position('bottom')
     ax.yaxis.set_ticks_position('left')
     return fig, ax
