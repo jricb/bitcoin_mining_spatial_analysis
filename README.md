@@ -4,4 +4,4 @@ This repository provides additional information (data, code and outputs) for the
 
 - Data_for_analysis_final_version: grid datasets in Shapefile and spatial weights in GAL file
 - Code_for_analysis_final_version: customized code for spatial join, spatial analysis and cluster analysis
-- Outputs_for_analysis_final_version: statistical results for spatial analysis
+- Outputs_for_analysis_final_version: statistical results from spatial analysis
