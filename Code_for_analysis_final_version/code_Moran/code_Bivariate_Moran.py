@@ -16,8 +16,6 @@ if __name__ == '__main__':
     cap_all_lg = [math.log10(i + 1) for i in sf['Cap.All']]
     h_rate_lg = [math.log10(i + 1) for i in sf['HrateAvg']]
 
-    #source code for esda.Moran_BV
-    #https://pysal.org/esda/_modules/esda/moran.html#Moran_BV
     mbi_fos = Moran_BV(h_rate_lg, cap_fossil_lg, w, transformation='r', permutations=999)
     mbi_ren = Moran_BV(h_rate_lg, cap_renewable_lg, w, transformation='r', permutations=999)
     mbi_all = Moran_BV(h_rate_lg, cap_all_lg, w, transformation='r', permutations=999)
