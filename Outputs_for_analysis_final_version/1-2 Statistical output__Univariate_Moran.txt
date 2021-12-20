@@ -1,2 +1,0 @@
-Print (results) : (1) value of Moran's I, (2) p-value based on permutations, (3) z-score based on permutations, (4) average value of I from permutations, (5) variance of I from permutations, (6) standard deviation of I under permutations
-Univariate Moran Hashrate : (1) 0.6494899203939182 (2) 0.001 (3) 97.8245938879573 (4) 9.966861577748252e-05 (5) 4.4067196561501725e-05 (6) 0.006638312779728124
