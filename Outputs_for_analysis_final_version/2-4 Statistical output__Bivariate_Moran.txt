@@ -1,5 +1,4 @@
 Print (results) : (1) value of bivariate Moran's I, (2) p-value based on permutations, (3) z-score based on permutations, (4) average value of I from permutations, (5) variance of I from permutations, (6) standard deviation of I under permutations
 Bivariate Moran All : (1) 0.5860938409904622 (2) 0.001 (3) 60.74168355883924 (4) 0.0002209530401073722 (5) 9.303217017299047e-05 (6) 0.009645318562545795
-
 Bivariate Moran Fos : (1) 0.5650604920356921 (2) 0.001 (3) 59.64287496496784 (4) 8.525200839554032e-05 (5) 8.973083135612063e-05 (6) 0.009472635924394046
 Bivariate Moran Ren : (1) 0.5122519758980071 (2) 0.001 (3) 53.58828875804537 (4) -0.0003110630783130354 (5) 9.148603254892364e-05 (6) 0.009564833116626951
